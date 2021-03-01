@@ -1,5 +1,7 @@
 /* お問い合わせ */
-
+* {
+    color: #235231;
+}
 .form_head {
     display: table;
     width: 100%;

@@ -1,0 +1,365 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Sriracha&display=swap');
+
+html {
+    overflow-y: scroll;
+}
+
+*{
+    color: #235231;
+}
+
+/* ==================== 
+   外観調整
+ ==================== */
+
+body {
+    /* フォント種類を指定 */
+    font-family: "メイリオ", "Hiragino Kaku Gothic Pro", sans-serif;
+    /* 字間(プロポーショナルメトリクス)を指定 */
+    font-feature-settings: "palt";
+}
+
+.html {
+    font-size: 62.5%;
+    /* 16px×0.625＝10px の意味 */
+    height: 100%;
+}
+
+.container {
+    /* font-size: 2.0rem; */
+    /* ==================== 
+       rem単位 について
+       ・root em (最上位階層の em )の意味
+       ・最上位のHTML要素である「HTML」の文字サイズを基準とした、相対的文字サイズ指定の単位
+       ・※親要素の影響を受けない※
+       ・レスポンシブ対応に適している
+     ==================== */
+}
+
+.header {
+    background-color: #f8a100;
+}
+
+.main {
+    background-color: #fad288;
+}
+
+.aside {
+    background-color: #fdbf4b;
+    /* background-color: #f1daae; */
+
+}
+
+.nav {
+    background-color: #fdbf4b;
+    /* background-color: #f1daae; */
+}
+
+.footer {
+    background-color: #f8a100;
+}
+
+.footer p {
+    text-align: right;
+}
+
+header ul {
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+    /*文字を右揃え */
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ==================== 
+   グリッドコンテナ
+ ==================== */
+.container {
+    display: grid;
+    min-height: 100%;
+
+    /*1列目から順番に、180px , 1fr, 160px の幅
+    中央の幅は、全体 - 左右 の可変幅*/
+    grid-template-columns: 160px 1fr 160px;
+    /* 1行目から順番に60px 1fr 90pxの高さ */
+    grid-template-rows: 100px 1fr 50px;
+}
+
+/* ==================== 
+   グリッドアイテム
+ ==================== */
+.header {
+    /*列の1本目～4本目のグリッドラインまで*/
+    grid-column: 1 / 4;
+    /* 下記の省略記法*/
+
+    /* grid-column-start: 1; */
+    /* grid-column-end: 4; */
+
+    /*行の1本目～2本目のグリッドラインまで*/
+    grid-row: 1;
+    /*autoは省略可*/
+
+    /* grid-row-start: 1; */
+    /* grid-row-end: auto; */
+    /* auto は指定したglの次のglまでの範囲*/
+
+    position: sticky;
+    top: 0;
+
+}
+
+header li {
+    display: inline-block;
+    background-color: white;
+    padding: 1vw;
+    border-radius: 1vw;
+    /*背景の角を丸く*/
+}
+
+header {
+    z-index: 3;
+    transition: all .4s ease;
+}
+
+.main {
+    grid-column: 2;
+    grid-row: 2;
+
+    /* min-height: 100%; */
+    /* min-height: calc(100vh - 70px); */
+}
+
+main .top_img {}
+
+main .item1 {
+    /* grid-column: 2; */
+    /* grid-row: 2; */
+    height: 700px;
+    /* background-image: url("../img/759938_m2.jpg"); */
+    background: url("../img/759938_m2.jpg") no-repeat center center;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+
+main .item2 {
+    height: 500px;
+    /* width: 500px; */
+    padding-top: 300px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+main .item2 p {
+    text-align: center;
+    line-height: 40px;
+    margin: 0px;
+    font-size: 1.5rem;
+}
+
+.item3 {
+    display: grid;
+    height: 700px;
+    grid-template-columns: 600px 400px;
+    padding-top: 200px;
+}
+
+.item3_left {
+    grid-column: 1;
+    /* background: url("../img/1929148_m.jpg") no-repeat center center; */
+    /* background-size: cover; */
+    text-align:left;
+}
+
+.item3_right {
+    grid-column: 2;
+}
+
+.item3_right p {
+    text-align: left;
+    line-height: 40px;
+    /* margin: 0px; */
+    font-size: 1.2rem;
+}
+
+.item4 {
+    display: grid;
+    height: 700px;
+    grid-template-columns: 400px 600px;
+    padding-top: 200px;
+
+}
+
+.item4_left {
+    grid-column: 1;
+}
+
+.item4_right {
+    grid-column: 2;
+    text-align:right;
+    /* background: url("../img/1929148_m.jpg") no-repeat center center; */
+    /* background-size: cover; */
+}
+
+.item4_left p {
+    text-align:center;
+    line-height: 40px;
+    /* margin: 0px; */
+    font-size: 1.2rem;
+}
+
+main .item5 {
+    /* grid-column: 2; */
+    /* grid-row: 2; */
+    height: 700px;
+    /* background-image: url("../img/759938_m2.jpg"); */
+    /* background: url("../img/759938_m2.jpg") no-repeat center center; */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+}
+
+.aside {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.nav {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.footer {
+    grid-column: 1 / 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    /* height: 50px; */
+}
+
+.top_img {
+    width: 100%;
+}
+
+/* ==================== 
+   お問い合わせ
+ ==================== */
+.form_head {
+    display: table;
+    width: 100%;
+    height: 60px;
+    /* border: solid 1px #b4b0b0; */
+    /* box-shadow: 1px 1px #e6e1e1; */
+    border-radius: 5px;
+}
+
+.form_head h1 {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: normal;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.form_head p {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 13px;
+    padding-left: 140px;
+}
+
+
+/* フォーム入力欄 */
+
+.user_form {
+    /* width: 760px; */
+    text-align: center;
+}
+
+.user_form form {
+    display: inline-block;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.user_form span {
+    color: #ff0000;
+}
+
+.user_form label {
+    font-size: 13px;
+}
+
+.user_form input,
+textarea {
+    display: block;
+    margin-bottom: 10px;
+    border: solid 1px #b4b0b0;
+}
+
+input {
+    width: 410px;
+}
+
+textarea {
+    width: 410px;
+    height: 100px;
+}
+
+input[type="submit"] {
+    background-color: #2e6d41;
+    margin-top: 15px;
+    width: 180px;
+    color: #ecebeb;
+}
+
+
+/* ==================== 
+   モバイル対応
+ ==================== */
+
+@media(max-width: 599px) {
+
+    /* モバイル------------------- */
+    .container {
+        grid-template-columns: 0 auto 0;
+    }
+
+    .item3 {
+        grid-template-columns: 0 auto 0;
+    }
+
+    .item4 {
+        grid-template-columns: 0 auto 0;
+    }
+
+    .footer p {
+        font-size: 0.5rem;
+    }
+
+    header li {
+        padding: 2vw;
+    }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width:899px) {
+
+    /* タブレット-------------------*/
+    .container {
+        grid-template-columns: 0 auto 0;
+    }
+
+    .item3 {
+        grid-template-columns: 0 auto 0;
+    }
+
+    .item4 {
+        grid-template-columns: 0 auto 0;
+    }
+}
+
+

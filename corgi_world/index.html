@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <title>Corgi World</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="item header">
+            <ul>
+                <li><a href="#item2">コーギーについて</a></li>
+                <li><a href="#item3">飼い方</a></li>
+                <li><a href="#item4">？？？？</a></li>
+                <li><a href="#item5">お問い合わせ</a></li>
+            </ul>
+        </header>
+        <aside class="item aside"></aside>
+        <nav class="item nav"></nav>
+        <main class="item main">
+            <div class="item1" id="item1">
+                <div></div>
+            </div>
+            <div class="item2" id="item2">
+                <p>The Welsh Corgi is a small type of herding dog that originated in Wales. Two separate breeds are
+                    recognised: the Pembroke Welsh Corgi and the Cardigan Welsh Corgi. There are physical differences
+                    between the two different breeds. According to the breed standards, overall the Cardigan is larger,
+                    both in weight and in height. Their tails are of different shapes; docking had previously been used.
+                </p>
+            </div>
+            <div class="item3" id="item3">
+                <div class="item3_left"><img src="./img/1929148_m.jpg" width="80%"></div>
+                <div class="item3_right">
+                    <p>コーギーは短毛ですがダブルコートで下毛（アンダーコート）が密集していますので、喚毛期は抜け毛があります。
+                        ブラッシングは週に2～3回以上は行ってあげましょう。
+
+                        本来、攻撃的な面は少ない犬種ですが、運動量や作業、飼い主とのコミュニケーションが少ないと、ストレスによって攻撃的になることがあります。
+                        運動が好きでアジリティやフライングディスクなどドッグスポーツで活躍するコーギーもいるほどです。
+                        運動は毎日しっかり行い、しつけによるコミュニケーションも子犬の頃から行いましょう。
+
+                        牛の脚を咬んで動きをコントロールするという牧畜犬の特性として、人の足が気になって咬んでしまう個体もあります。子犬の頃から人の足を咬んではいけないことを教えましょう。小さなお子さんがいるおうちではよく注意することが大切です。
+                    </p>
+                </div>
+            </div>
+            <div class="item4" id="item4">
+                <div class="item4_left">
+                    <p>The Welsh Corgi is a small type of herding dog that originated in Wales. Two separate breeds are
+                        recognised: the Pembroke Welsh Corgi and the Cardigan Welsh Corgi.
+                    </p>
+                </div>
+                <div class="item4_right"><img src="./img/1929148_m.jpg" width="80%"></div>
+            </div>
+            <div class="item5" id="item5">
+                <div class="form_head">
+                    <h1>お問い合わせ</h1>
+                    <!-- <p>ご意見、ご感想ありましたら以下の欄にご記入の上、送信してください。</p> -->
+                </div>
+                <div class="user_form">
+                    <form action="contact.html" method="POST">
+                        <label>
+                            名前<span>（必須）</span>：<input type="text" name="user_name" placeholder="">
+                        </label>
+                        <label>
+                            メールアドレス<span>（必須）</span>：<input type="email" name="user_mail" placeholder="">
+                        </label>
+                        <label>
+                            URL：<input type="url" name="user_url" placeholder="">
+                        </label>
+                        <label>
+                            お問い合わせ内容：<textarea name="user_comment" placeholder=""></textarea>
+                        </label>
+                        <input type="submit" value="送信">
+                    </form>
+                </div>
+
+        </main>
+        <footer class="item footer">
+            <p>Copyright &copy; KN All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

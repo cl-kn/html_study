@@ -6,26 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>等幅カラムを複数行に分割する</title>
     <style>
         .col {
-            border-style: dotted;
-            border-color: black;
-            background-color: bisque;
+            border-style: solid;
         }
     </style>
+    <title>コンテンツの並び替え(order-1 ～ order-12)</title>
 </head>
 
 <body>
     <div class="container">
-        <!-- １行目 -->
         <div class="row">
-            <div class="col">１列目</div>
-            <div class="col">２列目</div>
-            <!-- ２行目 -->
-            <div class="w-100"></div>
-            <div class="col">１列目</div>
-            <div class="col">２列目</div>
+            <div class="col">第1のカラム（順序指定：なし）</div>
+            <div class="col order-12">第2のカラム（順序指定：12）</div>
+            <div class="col order-first">第3のカラム（順序指定：１）</div>
+            <!-- <div class="col order-1">第3のカラム（順序指定：１）</div> -->
         </div>
     </div>
 
@@ -35,10 +30,3 @@
 </body>
 
 </html>
-
-<!--
-Sizingユーティリティ
-[w-100] 幅100％を指定するクラス
-
-
- -->

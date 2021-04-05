@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .container {
+            background-color: rgb(216, 226, 245);
+        }
+        
+        .col {
+            border-style: double;
+            border-color: rgb(3, 32, 32);
+        }
+        
+        .row {
+            /* height: 100px; */
+            border-style: double;
+            border-color: rgb(3, 32, 32);
+        }
+        
+        .col-4 {
+            border-style: double;
+            border-color: rgb(3, 32, 32);
+        }
+    </style>
+    <title>水平方向の整列</title>
+</head>
+
+<body>
+    <h3>水平左揃え：justify-content:flex-start</h3>
+    <div class="container">
+        <div class="row justify-content-start">
+            <div class="col-4">col-4</div>
+            <div class="col-4">col-4</div>
+        </div>
+    </div>
+
+    <h3>水平中央揃え：justify-content:flex-center</h3>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-4">col-4</div>
+            <div class="col-4">col-4</div>
+        </div>
+    </div>
+
+    <h3>水平右揃え：justify-content:flex-end</h3>
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-4">col-4</div>
+            <div class="col-4">col-4</div>
+        </div>
+    </div>
+
+    <h3>等間隔に配置：justify-content-around</h3>
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col">col-4</div>
+            <div class="col">col-4</div>
+        </div>
+    </div>
+
+    <h3>両端から均等に配置：justify-content-between</h3>
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col">col-4</div>
+            <div class="col">col-4</div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+<!--
+【水平方向の整列】
+justify-content-start   左揃え
+justify-content-center  中央揃え
+justify-content-end     右揃え
+justify-content-around  等間隔に配置
+justify-content-between 両端から均等配置
+
+
+ -->

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+    </style>
+    <title>アラートの基本的な使用例</title>
+</head>
+
+<body>
+
+    <div class="alert alert-primary" role="alert">
+        alert-primary
+    </div>
+
+    <div class="alert alert-secondary" role="alert">
+        alert-secondary
+    </div>
+
+    <!-- アラート内にコンテンツを追加 -->
+    <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">アラートの見出し (h4)</h4>
+        <p>アラート内の段落 (p)</p>
+        <hr>
+        <!-- 区切り -->
+        <p class="mb-0">アラート内の段落 (p)</p>
+    </div>
+
+    <div class="alert alert-danger" role="alert">
+        alert-danger
+    </div>
+
+    <!-- アラートを閉じる機能 -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        alert-warning ...please x button click
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="alert alert-info" role="alert">
+        alert-info
+    </div>
+
+    <div class="alert alert-light" role="alert">
+        alert-light
+    </div>
+
+    <div class="alert alert-dark" role="alert">
+        alert-dark
+    </div>
+
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+<!--
+「アラートを閉じる機能」
+・alertクラスの要素に、alert-dismissible クラスを追加
+・button要素にcloseクラス追加で閉じるボタン
+・JavaScriptを利用する為、data-dismiss="alert" を追加
+
+JavaScriptを利用する、Bootstrapコンポーネントの殆どは、HTMLにデータ属性を追加するだけで利用できる
+これを「データ属性API」と言う
+
+
+ -->

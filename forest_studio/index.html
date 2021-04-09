@@ -28,7 +28,6 @@
             </nav>
         </header>
         <script type="text/javascript">
-        
             function slideSwitch() {
                 var $active = $('#slideshow img.active');
 
@@ -45,14 +44,14 @@
                     .addClass('active')
                     .animate({
                         opacity: 1.0
-                    }, 1000, function () {
+                    }, 1000, function() {
                         $active.removeClass('active last-active');
                     });
             }
 
-            
 
-            $(function () {
+
+            $(function() {
                 setInterval("slideSwitch()", 4000);
             });
         </script>

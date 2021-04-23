@@ -1,0 +1,14 @@
+div.img-hidden {
+    height: 300px;
+    overflow: hidden;
+}
+
+div.container-m {
+    margin-top: 80px;
+}
+
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+}

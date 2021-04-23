@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .container {
+            background-color: rgb(216, 226, 245);
+        }
+        
+        .col {
+            border-style: double;
+            border-color: rgb(3, 32, 32);
+        }
+        
+        .row {
+            /* height: 100px; */
+            border-style: double;
+            border-color: rgb(3, 32, 32);
+        }
+        
+        .col-4 {
+            border-style: double;
+            border-color: rgb(3, 32, 32);
+        }
+    </style>
+    <title>ガターを削除したカラム</title>
+</head>
+
+<body>
+
+    <h3>no-gutters アリ</h3>
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col">col</div>
+            <div class="col">col</div>
+        </div>
+    </div>
+
+    <h3>no-gutters ナシ！！</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col">col</div>
+            <div class="col">col</div>
+        </div>
+    </div>
+
+    <h3>container ナシ ： no-gutters アリ<br>Edge to Edge デザイン（端～端まで）</br>
+    </h3>
+    <div class="row no-gutters">
+        <div class="col">col</div>
+        <div class="col">col</div>
+    </div>
+
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

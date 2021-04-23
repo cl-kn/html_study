@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+    </style>
+    <title>基本のナビゲーションバー</title>
+</head>
+
+<body>
+    <h1 class="text-center my-5">コンポーネント：ナビゲーションバー</h1>
+    <h2 class="text-center my-4">基本的な使用例</h2>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a href="#" class="navbar-brand">ブランド</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#切り替え表示されるコンテンツ名" aria-controls="切り替え表示されるコンテンツ名" aria-expanded="false" aria-label="ナビゲーション切り替え">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="切り替え表示されるコンテンツ名">
+                <!-- ナビゲーション -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">リンク１</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">リンク２</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">リンク３</a>
+                    </li>
+                </ul>
+
+                <!-- 検索バー -->
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="検索" aria-label="検索">
+                    <button class="btn btn-light my-2 my-sm-0" type="submit">検索</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+<!--
+
+5-2 ： ナビゲーションバー
+
+「ブランド」
+・ブランド名等の見出しや、ロゴなどの画像を表示させるサブコンポーネント
+・ブランドとして表示させたい要素に、 navbar-brand クラスを追加
+・a要素、span要素など様々な要素で使用できる
+
+
+
+
+
+
+
+
+
+
+ -->

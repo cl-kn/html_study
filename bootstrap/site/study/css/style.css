@@ -1,0 +1,17 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+body {
+    /* フォント種類を指定 */
+    font-family: "Kosugi Maru", "メイリオ", "Hiragino Kaku Gothic Pro", sans-serif;
+    /* 字間(プロポーショナルメトリクス)を指定 */
+    font-feature-settings: "palt";
+}
+
+.active {
+    color: black;
+    font-weight: bold;
+}
+
+.navbar-collapse a {
+    font-size: 25px !important;
+}

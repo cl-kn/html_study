@@ -1,0 +1,59 @@
+/* ==================== 
+   Flexbox デモ１：レイアウトの基本
+ ==================== */
+header {
+    display: flex;
+    justify-content: space-between; /* 左右均等分布 */
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center; /* 上下中央揃え */
+}
+
+ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+main div.animal {
+    width: calc(33.3% - 10px);
+    /* flex-basis: 30%; */
+    /* justify-content: space-between; */
+    /* align-items:stretch; */
+    flex-direction: column;
+    margin: 5px;
+}
+
+/* ==================== 
+   モバイル対応
+ ==================== */
+
+@media(max-width: 599px) {
+    /* モバイル------------------- */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main div.animal {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (min-width: 600px) and (max-width:899px) {
+    /* タブレット-------------------*/
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

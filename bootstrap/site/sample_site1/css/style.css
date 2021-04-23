@@ -1,0 +1,21 @@
+div.img-hidden {
+    height: 300px;
+    overflow: hidden;
+}
+
+div.container-m {
+    margin-top: 80px;
+}
+
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+}
+
+.jumbotron-extend {
+    /* background: url(../img/mitte2020705023_TP_V.jpg) center no-repeat; */
+    background-size: cover;
+    height: 800px;
+    backdrop-filter: blur(12px);
+}

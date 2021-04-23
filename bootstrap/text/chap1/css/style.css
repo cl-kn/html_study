@@ -1,0 +1,23 @@
+.col {
+    background-color: rgb(194, 194, 194);
+}
+
+.col-2 {
+    background-color: rgb(226, 64, 43);
+}
+
+.col-4 {
+    background-color: rgb(130, 172, 31);
+}
+
+.col-6 {
+    background-color: rgb(43, 137, 226);
+}
+
+.col-5 {
+    background-color: coral;
+}
+
+.col-7 {
+    background-color: rgb(26, 102, 30);
+}

@@ -2,7 +2,7 @@
 
 勉強用のリポジトリです。
 
-1. [forest_studio](/tree/main/forest_studio)  
+1. [forest_studio](/forest_studio)  
   教材　「HTML5&CSS3レッスンブック」  
   ・最初に学んだHTMLの教科書  
   

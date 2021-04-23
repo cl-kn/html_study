@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Green Leaf - お問い合わせ</title>
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>
+                <a href="index.html">Green Leaf</a>
+            </h1>
+            <!-- <p>生活を楽しくする情報をもっと身近にお届けします</p> -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">トップ</a></li>
+                    <li><a href="about.html">森の工房について</a></li>
+                    <!-- <li><a href="#.html">季節のイベント</a></li> -->
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <!-- <li><a href="#.html">ブログ</a></li> -->
+                </ul>
+            </nav>
+        </header>
+        <div class="back_img">
+            <!-- <img alt="sky" height="230" src="img/sky.jpg" width="760"> -->
+        </div>
+        <div class="wrap">
+            <div class="form_head">
+                <h1>お問い合わせ</h1>
+                <p>ご意見、ご感想ありましたら以下の欄にご記入の上、送信してください。</p>
+            </div>
+            <div class="user_form">
+                <form action="contact.html" method="POST">
+                    <label>
+                        名前<span>（必須）</span>：<input type="text" name="user_name" placeholder="名前を入力してください">
+                    </label>
+                    <label>
+                        メールアドレス<span>（必須）</span>：<input type="email" name="user_mail" placeholder="メールアドレスを入力してください">
+                    </label>
+                    <label>
+                        URL：<input type="url" name="user_url" placeholder="ホームページのURLを入力してください">
+                    </label>
+                    <label>
+                        コメント：<textarea name="user_comment" placeholder="コメントなどを入力してください"></textarea>
+                    </label>
+                    <input type="submit" value="送信">
+                </form>
+            </div>
+        </div>
+        <footer>
+            <p>Copyright &copy; sugiura All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

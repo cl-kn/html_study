@@ -1,0 +1,27 @@
+#navigation {
+    position: relative;
+}
+
+#slide-line {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: #75C2FF;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+ul {
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+    /*文字を右揃え */
+}
+
+li {
+    display: inline-block;
+    background-color: white;
+    padding: 1vw;
+    border-radius: 1vw;
+    /*背景の角を丸く*/
+}
